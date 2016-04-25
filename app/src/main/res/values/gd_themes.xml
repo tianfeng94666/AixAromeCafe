@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+
+	<style name="Theme.GreenDroid" parent="android:Theme">
+		
+		<item name="gdActionBarTitleColor">@android:color/white</item>
+		<item name="gdActionBarBackground">@color/gd_action_bar_tint</item>
+		<item name="gdActionBarItemBackground">@drawable/gd_action_bar_item</item>
+		<item name="gdActionBarDividerDrawable">@color/gd_action_bar_divider_tint</item>
+		<item name="gdActionBarDividerWidth">1px</item>
+		<item name="gdActionBarApplicationDrawable">@null</item>
+		<item name="gdActionBarHomeDrawable">@null</item>
+		<item name="gdActionBarItemColorNormal">@android:color/white</item>
+		<item name="gdActionBarItemColorAlt">@android:color/black</item>
+		<item name="gdActionBarMaxItems">3</item>
+
+		<item name="gdActionBarStyle">@style/GreenDroid.Widget.ActionBar</item>
+		<item name="gdActionBarTitleStyle">@style/GreenDroid.Widget.ActionBar.Title</item>
+		<item name="gdActionBarItemStyle">@style/GreenDroid.Widget.ActionBar.Item</item>
+
+	</style>
+	
+	
+	
+	<!-- 
+	   The following themes inherits from the Theme.Light Android base theme. 
+	   They are strict copies of the previous themes which a large source of errors
+	   However, it looks like there are no way to overcome this (multiple inheritance
+	   is not permitted).
+	-->
+	<style name="Theme.GreenDroid.Light" parent="@android:style/Theme.Light">
+		
+		<item name="gdActionBarTitleColor">@android:color/white</item>
+		<item name="gdActionBarBackground">@color/gd_action_bar_tint</item>
+		<item name="gdActionBarItemBackground">@drawable/gd_action_bar_item</item>
+		<item name="gdActionBarDividerDrawable">@color/gd_action_bar_divider_tint</item>
+		<item name="gdActionBarDividerWidth">1px</item>
+		<item name="gdActionBarApplicationDrawable">@null</item>
+		<item name="gdActionBarHomeDrawable">@null</item>
+		<item name="gdActionBarItemColorNormal">@android:color/white</item>
+		<item name="gdActionBarItemColorAlt">@android:color/black</item>
+		<item name="gdActionBarMaxItems">3</item>
+
+		<item name="gdActionBarStyle">@style/GreenDroid.Widget.ActionBar</item>
+		<item name="gdActionBarTitleStyle">@style/GreenDroid.Widget.ActionBar.Title</item>
+		<item name="gdActionBarItemStyle">@style/GreenDroid.Widget.ActionBar.Item</item>
+
+		
+	</style>
+	
+</resources>

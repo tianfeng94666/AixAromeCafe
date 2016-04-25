@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+
+	
+	<style name="GreenDroid" />
+	<style name="GreenDroid.Widget" />
+	
+
+
+	<!-- ActionBar related styles -->
+	<style name="GreenDroid.Widget.ActionBar">
+		<item name="android:background">?attr/gdActionBarBackground</item>
+		<item name="android:layout_height">@dimen/gd_action_bar_height</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="dividerDrawable">?attr/gdActionBarDividerDrawable</item>
+		<item name="dividerWidth">?attr/gdActionBarDividerWidth</item>
+		<item name="homeDrawable">?attr/gdActionBarHomeDrawable</item>
+		<item name="maxItems">?attr/gdActionBarMaxItems</item>
+	</style>
+	
+	<style name="GreenDroid.Widget.ActionBar.Dashboard">
+		<item name="type">dashboard</item>
+	</style>
+	
+	<style name="GreenDroid.Widget.ActionBar.Empty">
+		<item name="type">empty</item>
+	</style>
+	
+	<style name="GreenDroid.Widget.ActionBar.Item" parent="@style/GreenDroid.Widget">
+		<item name="android:layout_width">@dimen/gd_action_bar_height</item>
+		<item name="android:background">?attr/gdActionBarItemBackground</item>
+	</style>
+	
+	<style name="GreenDroid.Widget.ActionBar.Title" parent="@style/GreenDroid.Widget">
+		<item name="android:textColor">?attr/gdActionBarTitleColor</item>
+	</style>
+	
+</resources>
