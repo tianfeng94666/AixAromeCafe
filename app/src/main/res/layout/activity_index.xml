@@ -1,17 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.tianfeng.aixaromecafe.IndexActivity">
-    <com.example.tianfeng.actionBar.ActionBar
-        android:id="@+id/index_actionbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"></com.example.tianfeng.actionBar.ActionBar>
+    tools:context="com.example.tianfeng.activity.IndexActivity">
 
-    <!--<TextView-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="Hello World!" />-->
-</LinearLayout>
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar" />
+
+    <Button
+        android:id="@+id/mapBut"
+        android:layout_below="@id/actionbar"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:text="map" />
+
+    <Button
+        android:id="@+id/friendsBut"
+        android:layout_below="@id/mapBut"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="friends" />
+
+    <Button
+        android:id="@+id/coffeeBut"
+        android:layout_below="@id/friendsBut"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="coffee" />
+
+    <Button
+
+        android:id="@+id/coupon"
+        android:layout_below="@id/coffeeBut"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="couponBut" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/darker_gray"
+        android:orientation="horizontal"
+        android:paddingBottom="0dp">
+
+        <TextView
+            android:id="@+id/memberText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="16dp"
+            android:text="会员" />
+
+        <TextView
+            android:id="@+id/introductionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingLeft="16dp"
+            android:text="功能介绍" />
+
+        <TextView
+            android:id="@+id/changeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:text="中/En" />
+    </RelativeLayout>
+</RelativeLayout>
